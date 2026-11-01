@@ -1,0 +1,34 @@
+{
+  "_comment": "Single source of truth for external addresses. Never copy addresses from blogs/tutorials. Re-verify before every deployment (see docs/DECISIONS.md, section 'Address verification').",
+  "base-mainnet": {
+    "chainId": 8453,
+    "verifiedAt": "2026-11-01",
+    "sources": [
+      "https://developers.uniswap.org/docs/protocols/v3/deployments/v3-base-deployments",
+      "https://developers.uniswap.org/deployments.json (commit cd2e8a869498e9cd6e821ad518d91f6c7a3d8d72)",
+      "https://developers.circle.com/stablecoins/usdc-contract-addresses (native USDC)",
+      "Base predeploy: WETH9 at 0x4200000000000000000000000000000000000006"
+    ],
+    "uniswapV3Factory": "0x33128a8fC17869897dcE68Ed026d694621f6FDfD",
+    "nonfungiblePositionManager": "0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1",
+    "swapRouter02": "0x2626664c2603336E57B271c5C0b26F421741e481",
+    "quoterV2": "0x3d4e44Eb1374240CE5F1B871ab261CD16335B76a",
+    "weth": "0x4200000000000000000000000000000000000006",
+    "usdc": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913"
+  },
+  "base-sepolia": {
+    "chainId": 84532,
+    "verifiedAt": "2026-11-01",
+    "sources": [
+      "https://developers.uniswap.org/deployments.json (commit cd2e8a869498e9cd6e821ad518d91f6c7a3d8d72)",
+      "https://developers.circle.com/stablecoins/usdc-contract-addresses (USDC testnet)",
+      "Base predeploy: WETH9 at 0x4200000000000000000000000000000000000006"
+    ],
+    "uniswapV3Factory": "0x4752ba5DBc23f44D87826276BF6Fd6b1C372aD24",
+    "nonfungiblePositionManager": "0x27F971cb582BF9E50F397e4d29a5C7A34f11faA2",
+    "swapRouter02": "0x94cC0AaC535CCDB3C01d6787D6413C739ae12bc4",
+    "quoterV2": "0xC5290058841028F1614F3A6F0F5816cAd0df5E27",
+    "weth": "0x4200000000000000000000000000000000000006",
+    "usdc": "0x036CbD53842c5426634e7929541eC2318f3dCF7e"
+  }
+}

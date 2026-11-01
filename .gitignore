@@ -1,0 +1,20 @@
+# secrets
+.env
+.env.*
+!.env.example
+# build output
+out/
+cache/
+broadcast/
+node_modules/
+keeper/dist/
+keeper/node_modules/
+.DS_Store
+backtest/data/
+
+# regenerable research artefacts (reports in backtest/*.md are tracked)
+backtest/results/
+backtest/data/
+test/e2e-fork/node_modules/
+test/e2e-fork/out/
+test/e2e-fork/package-lock.json

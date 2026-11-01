@@ -1,0 +1,12 @@
+{
+  "name": "autolp-e2e-fork",
+  "private": true,
+  "description": "End-to-end tests of LiquidityManager on a local Hardhat fork of Base (alternative to forge fork tests).",
+  "scripts": {
+    "compile": "mkdir -p out && ABI_OUT=out/abi.json BIN_OUT=out/manager.bin node compile.cjs ../.. src/LiquidityManager.sol",
+    "node": "hardhat node --port 8545",
+    "happy-path": "node happy-path.mjs out",
+    "scenarios": "node scenarios.mjs out"
+  },
+  "devDependencies": { "hardhat": "2.22.17", "solc": "0.8.28", "viem": "2.21.0" }
+}

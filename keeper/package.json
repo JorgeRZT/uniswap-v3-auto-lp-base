@@ -1,0 +1,23 @@
+{
+  "name": "autolp-keeper",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Minimal keeper for the autoLP LiquidityManager: polls checkUpkeep() via eth_call and sends executeStrategy() only when needed.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "verify": "tsx src/verifyConfig.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
